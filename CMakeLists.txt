@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.21)
 project(Cmake)
-#C++测试出来的库文件cgo调用不了
+#C++测试出来的库文件cgo调用不了,且源文件后缀名要为.c
 #set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_C_STANDARD 99)
 
