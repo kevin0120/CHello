@@ -61,9 +61,6 @@
 				{
 					"backtrace" : 2,
 					"fragment" : "-fPIC"
-				},
-				{
-					"fragment" : "-std=gnu99"
 				}
 			],
 			"includes" : 
@@ -74,14 +71,6 @@
 				}
 			],
 			"language" : "C",
-			"languageStandard" : 
-			{
-				"backtraces" : 
-				[
-					1
-				],
-				"standard" : "99"
-			},
 			"sourceIndexes" : 
 			[
 				0

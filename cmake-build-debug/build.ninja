@@ -88,7 +88,7 @@ build cmake_object_order_depends_target_spc_lib_obj: phony || CMakeFiles/spc_lib
 
 build CMakeFiles/spc_lib_obj.dir/src/library.c.obj: C_COMPILER__spc_lib_obj_Debug D$:/Code/lianxi/CHello/src/library.c || cmake_object_order_depends_target_spc_lib_obj
   DEP_FILE = CMakeFiles\spc_lib_obj.dir\src\library.c.obj.d
-  FLAGS = -g -fPIC -std=gnu99
+  FLAGS = -g -fPIC
   INCLUDES = -ID:/Code/lianxi/CHello/include
   OBJECT_DIR = CMakeFiles\spc_lib_obj.dir
   OBJECT_FILE_DIR = CMakeFiles\spc_lib_obj.dir\src
@@ -150,7 +150,7 @@ build cmake_object_order_depends_target_Cmake: phony || cmake_object_order_depen
 
 build CMakeFiles/Cmake.dir/main.c.obj: C_COMPILER__Cmake_Debug D$:/Code/lianxi/CHello/main.c || cmake_object_order_depends_target_Cmake
   DEP_FILE = CMakeFiles\Cmake.dir\main.c.obj.d
-  FLAGS = -g -std=gnu99
+  FLAGS = -g
   INCLUDES = -ID:/Code/lianxi/CHello/./include
   OBJECT_DIR = CMakeFiles\Cmake.dir
   OBJECT_FILE_DIR = CMakeFiles\Cmake.dir
