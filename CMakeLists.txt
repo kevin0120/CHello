@@ -4,7 +4,7 @@ project(Cmake)
 set(CMAKE_CXX_STANDARD 14)
 #set(CMAKE_C_STANDARD 99)
 
-set(SOURCE_FILES src/library.c)
+set(SOURCE_FILES src/library.cpp)
 
 add_library(spc_lib_obj OBJECT "")
 target_compile_options(spc_lib_obj PRIVATE -fPIC)
@@ -26,7 +26,7 @@ set_target_properties(spc_libStatic PROPERTIES OUTPUT_NAME spc_lib)
 
 
 #后缀名要对应起来 c或者cpp
-add_executable(Cmake main.c)
+add_executable(Cmake main.cpp)
 target_link_directories(Cmake PRIVATE ${CMAKE_BINARY_DIR})
 
 #静态编译

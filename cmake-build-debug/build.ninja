@@ -69,7 +69,7 @@ build cmake_object_order_depends_target_spc_libStatic: phony || cmake_object_ord
 #############################################
 # Link the static library libspc_lib.a
 
-build libspc_lib.a: C_STATIC_LIBRARY_LINKER__spc_libStatic_Debug CMakeFiles/spc_lib_obj.dir/src/library.c.obj || spc_lib_obj
+build libspc_lib.a: CXX_STATIC_LIBRARY_LINKER__spc_libStatic_Debug CMakeFiles/spc_lib_obj.dir/src/library.cpp.obj || spc_lib_obj
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles\spc_libStatic.dir
   POST_BUILD = cd .
@@ -86,9 +86,9 @@ build libspc_lib.a: C_STATIC_LIBRARY_LINKER__spc_libStatic_Debug CMakeFiles/spc_
 
 build cmake_object_order_depends_target_spc_lib_obj: phony || CMakeFiles/spc_lib_obj.dir
 
-build CMakeFiles/spc_lib_obj.dir/src/library.c.obj: C_COMPILER__spc_lib_obj_Debug D$:/Code/lianxi/CHello/src/library.c || cmake_object_order_depends_target_spc_lib_obj
-  DEP_FILE = CMakeFiles\spc_lib_obj.dir\src\library.c.obj.d
-  FLAGS = -g -fPIC
+build CMakeFiles/spc_lib_obj.dir/src/library.cpp.obj: CXX_COMPILER__spc_lib_obj_Debug D$:/Code/lianxi/CHello/src/library.cpp || cmake_object_order_depends_target_spc_lib_obj
+  DEP_FILE = CMakeFiles\spc_lib_obj.dir\src\library.cpp.obj.d
+  FLAGS = -g -fPIC -std=gnu++14
   INCLUDES = -ID:/Code/lianxi/CHello/include
   OBJECT_DIR = CMakeFiles\spc_lib_obj.dir
   OBJECT_FILE_DIR = CMakeFiles\spc_lib_obj.dir\src
@@ -98,7 +98,7 @@ build CMakeFiles/spc_lib_obj.dir/src/library.c.obj: C_COMPILER__spc_lib_obj_Debu
 #############################################
 # Object library spc_lib_obj
 
-build spc_lib_obj: phony CMakeFiles/spc_lib_obj.dir/src/library.c.obj
+build spc_lib_obj: phony CMakeFiles/spc_lib_obj.dir/src/library.cpp.obj
 
 # =============================================================================
 # Object build statements for SHARED_LIBRARY target spc_lib
@@ -117,7 +117,7 @@ build cmake_object_order_depends_target_spc_lib: phony || cmake_object_order_dep
 #############################################
 # Link the shared library libspc_lib.dll
 
-build libspc_lib.dll libspc_lib.dll.a: C_SHARED_LIBRARY_LINKER__spc_lib_Debug CMakeFiles/spc_lib_obj.dir/src/library.c.obj || spc_lib_obj
+build libspc_lib.dll libspc_lib.dll.a: CXX_SHARED_LIBRARY_LINKER__spc_lib_Debug CMakeFiles/spc_lib_obj.dir/src/library.cpp.obj || spc_lib_obj
   LANGUAGE_COMPILE_FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\spc_lib.dir
@@ -148,9 +148,9 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_Cmake: phony || cmake_object_order_depends_target_spc_libStatic
 
-build CMakeFiles/Cmake.dir/main.c.obj: C_COMPILER__Cmake_Debug D$:/Code/lianxi/CHello/main.c || cmake_object_order_depends_target_Cmake
-  DEP_FILE = CMakeFiles\Cmake.dir\main.c.obj.d
-  FLAGS = -g
+build CMakeFiles/Cmake.dir/main.cpp.obj: CXX_COMPILER__Cmake_Debug D$:/Code/lianxi/CHello/main.cpp || cmake_object_order_depends_target_Cmake
+  DEP_FILE = CMakeFiles\Cmake.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++14
   INCLUDES = -ID:/Code/lianxi/CHello/./include
   OBJECT_DIR = CMakeFiles\Cmake.dir
   OBJECT_FILE_DIR = CMakeFiles\Cmake.dir
@@ -163,7 +163,7 @@ build CMakeFiles/Cmake.dir/main.c.obj: C_COMPILER__Cmake_Debug D$:/Code/lianxi/C
 #############################################
 # Link the executable Cmake.exe
 
-build Cmake.exe: C_EXECUTABLE_LINKER__Cmake_Debug CMakeFiles/Cmake.dir/main.c.obj | libspc_lib.a || libspc_lib.a
+build Cmake.exe: CXX_EXECUTABLE_LINKER__Cmake_Debug CMakeFiles/Cmake.dir/main.cpp.obj | libspc_lib.a || libspc_lib.a
   FLAGS = -g
   LINK_LIBRARIES = libspc_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -LD:/Code/lianxi/CHello/cmake-build-debug
